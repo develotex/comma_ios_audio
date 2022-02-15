@@ -40,8 +40,8 @@ public protocol CommaService {
 }
 @_inheritsConvenienceInitializers @objc public class CommaManager : ObjectiveC.NSObject {
   public static var shared: Comma.CommaManager
-  public var register: ((Swift.String?) -> Swift.Void)?
   public var login: ((Swift.String?) -> Swift.Void)?
+  public var register: ((Swift.String?) -> Swift.Void)?
   public var connectionStateDidChange: ((Comma.ConnectionState?) -> Swift.Void)?
   public var isDeleted: ((Swift.String?) -> Swift.Void)?
   public var isAnswered: ((Comma.IncomingCall) -> Swift.Void)?
